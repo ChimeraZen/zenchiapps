@@ -3,7 +3,7 @@
 **Description**:  ZenChi Apps is a growing collection of reuseable React components that have been
                   built with user-accessibilty in mind to provide the best experience across all platforms
 
-**Version**:      [0.1.0](#v010)  
+**Version**:      [0.1.1](#v011)  
 **Author**:       Elijah Liedtke (Chimera.Zen)  
 **Link**:         https://github.com/ChimeraZen/zenchiapps
 
@@ -25,15 +25,9 @@ npm i zenchiapps
 ```
 2. Once installed, ZenChi components can be imported using this syntax and replacing `component_name` with the required component:
 ```
-import { component_name } from 'zenchiapps'
+import component_name from 'zenchiapps'
 
-Example: import { Progress } from 'zenchiapps'
-```
-3. (Optional) Multiple ZenChi components can be imported using this syntax and replacing `component[n]_name` with the required component:
-```
-import { component1_name, component2_name } from 'zenchiapps'
-
-Example: import { Progress, Chart } from 'zenchiapps'
+Example: import Progress from 'zenchiapps'
 ```
 
 
@@ -42,7 +36,7 @@ Example: import { Progress, Chart } from 'zenchiapps'
 ### Progress
 The ZenChi Progress component uses React v16.6 and the HTML5 canvas element to draw a radial or linear progress bar that uses the requestAnimationFrame API to ensure a consistent display across platforms.
 
-This component can be initialized using `import { Progress } from 'zenchiapps'`
+This component can be initialized using `import Progress from 'zenchiapps'`
 
 ```
 <Progress 
@@ -97,5 +91,12 @@ barColor       |string   |#2196F3 |RGB\/A \| HEX \| COLOR  |Bar color
 ---
 
 ## ChangeLog
+### v0.1.1
+* NPM package publish fix
+  * /lib/index.js changed to `export { default as Progress } from 'zenchiapps'`
+* component import instructions corrected
+
+
+
 ### v0.1.0
 * Initial Commit and NPM package test

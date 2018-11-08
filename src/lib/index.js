@@ -1,3 +1,1 @@
-import Progress from './progress'
-
-export default Progress
+export {default as Progress} from './progress'
