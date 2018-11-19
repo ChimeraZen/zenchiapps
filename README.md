@@ -3,7 +3,7 @@
 **Description**:  ZenChi Apps is a growing collection of reuseable React components that have been
                   built with user-accessibilty in mind to provide the best experience across all platforms
 
-**Version**:      [0.1.2](#v012)  
+**Version**:      [0.1.3](#v013)  
 **Author**:       Elijah Liedtke (Chimera.Zen)  
 **Email**:        [chimera.zen@gmail.com](mailto:chimera.zen@gmail.com)  
 **Link**:         https://github.com/ChimeraZen/zenchiapps
@@ -115,6 +115,13 @@ barColor       |string   |#2196F3 |RGB\/A \| HEX \| COLOR  |Bar color
 
 &nbsp;
 ## ChangeLog
+### v0.1.3
+* Created blank landing page
+* Added routing for display pages
+* Created display pages for VideoPlayer and Progress components
+
+
+
 ### v0.1.2
 * Cleaned up Readme.md and added installation instructions
 

@@ -1,0 +1,146 @@
+.videoplayer-page {
+  
+}
+
+.videoplayer-page a,
+.videoplayer-page span[data-type="link"] {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.videoplayer-page p {
+  margin-bottom: 20px;
+}
+
+.videoplayer-page pre {
+  padding: 16px;
+  margin: 20px 0 40px 0;
+
+  font-size: 85%;
+  line-height: 1.45;
+
+  overflow: auto;
+
+  border-radius: 3px;
+  background-color: #f6f8fa;
+}
+
+.videoplayer-page code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0 0 0 5px;
+  padding: .2em .4em;
+}
+
+
+
+/* Primary Header */
+.videoplayer-page .primary-header {
+  display: flex;
+  align-items: baseline;
+  
+  padding: 10px 15px 15px 15px;
+  
+  font-size: 2rem;
+  
+  color: #EEEEEE;
+  background: #2a5475;
+}
+.videoplayer-page .primary-header span {
+  margin-left: 7px;
+  
+  font-style: italic;
+  font-size: 1rem;
+}
+  
+
+
+
+
+/* Table */
+.videoplayer-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.videoplayer-page table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.videoplayer-page table td,
+.videoplayer-page table th {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.videoplayer-page table td {
+  padding: 10px;
+}
+.videoplayer-page table th {
+  padding: 10px;
+}
+
+
+
+.videoplayer-page article {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.videoplayer-page article hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 20px 0;
+  padding: 0;
+}
+
+
+/* Article Header */
+.videoplayer-page article header {
+  width: 100%;
+}
+
+.videoplayer-page article h2 {
+  margin-bottom: 20px;
+  padding: 20px 0 5px 0;
+  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.videoplayer-page article h3 {
+  margin-bottom: 20px;
+}
+
+.videoplayer-page article header .heading {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+
+/* Article TOC */
+.videoplayer-page .toc h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.videoplayer-page ol {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+.videoplayer-page ol ol {
+  list-style-type: lower-alpha;
+}
+
+.videoplayer-page .mb20 {
+  margin-bottom: 20px;
+}
+
+
+
+/* Changelog */
+.videoplayer-page .changelog ul {
+  padding-left: 20px;
+  
+  list-style-position: inside;
+  list-style-type: disc;
+}
+.videoplayer-page .changelog ul ul {
+  padding-left: 30px;
+  list-style-type: circle;
+}

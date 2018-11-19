@@ -1,30 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Progress from './lib'
+import React, { Component } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
-class App extends Component {
+import Nav from './components/Nav'
+import Routes from './components/Routes'
+
+import appContext from './components/contexts'
+
+import './App.css'
+
+export default class App extends Component {
+  static contextType = appContext
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-        <Progress />
-      </div>
-    );
+      <BrowserRouter>
+        <section className="zenchiapps">
+          <Nav />
+          <Routes />
+        </section>
+      </BrowserRouter>
+    )
+    
   }
 }
-
-export default App;
