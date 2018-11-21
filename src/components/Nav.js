@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 
-//import appContext from './contexts'
-
-import avatar from '../assets/images/eliedtke.jpeg'
-
 class Nav extends Component {
   state = {
     creator: 'closed',
