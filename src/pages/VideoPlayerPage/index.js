@@ -145,7 +145,7 @@ export default class VideoPlayerPage extends Component {
                   </li>
                   <li>
                     Once installed, the VideoPlayer component can be imported using:
-                    <pre>import { VideoPlayer } from 'zenchi-videoplayer'</pre>
+                    <pre>import &#123; VideoPlayer &#125; from 'zenchi-videoplayer'</pre>
                   </li>
                 </ol>
               </section>
@@ -192,7 +192,7 @@ export default class VideoPlayerPage extends Component {
 
                 <p>
                   This component can be initialized using 
-                  <code>import { VideoPlayer } from 'zenchiapp-videoplayer'</code>
+                  <code>import &#123; VideoPlayer &#125; from 'zenchiapp-videoplayer'</code>
                 </p>
                 
                 <pre>

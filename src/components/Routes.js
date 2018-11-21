@@ -6,14 +6,18 @@ import {  Switch,
 import {  Progress } from '../lib'
 
 import Homepage from '../pages/Homepage'
+import AboutPage from '../pages/AboutPage'
 import VideoPlayerPage from '../pages/VideoPlayerPage'
+import GitHubReadmePage from '../pages/GitHubReadmePage'
 
 export const Routes = () =>
   <main>
     <Switch>
       <Route exact path="/" component={Homepage} />
+      <Route path="/about" component={AboutPage} />
       <Route exact path="/videoplayer" component={VideoPlayerPage} />
       <Route exact path="/progress" component={Progress} />
+      <Route exact path="/github-readme" component={GitHubReadmePage} />
     </Switch>
   </main>
 

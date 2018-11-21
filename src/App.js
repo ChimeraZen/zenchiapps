@@ -6,7 +6,7 @@ import Routes from './components/Routes'
 
 import appContext from './components/contexts'
 
-import './App.css'
+import './App.scss'
 
 export default class App extends Component {
   static contextType = appContext
@@ -14,7 +14,7 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <section className="zenchiapps">
+        <section id="zenchiapps">
           <Nav />
           <Routes />
         </section>

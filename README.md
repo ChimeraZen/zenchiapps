@@ -3,7 +3,7 @@
 **Description**:  ZenChi Apps is a growing collection of reuseable React components that have been
                   built with user-accessibilty in mind to provide the best experience across all platforms
 
-**Version**:      [0.1.3](#v013)  
+**Version**:      [0.1.4](#v014)  
 **Author**:       Elijah Liedtke (Chimera.Zen)  
 **Email**:        [chimera.zen@gmail.com](mailto:chimera.zen@gmail.com)  
 **Link**:         https://github.com/ChimeraZen/zenchiapps
@@ -115,6 +115,15 @@ barColor       |string   |#2196F3 |RGB\/A \| HEX \| COLOR  |Bar color
 
 &nbsp;
 ## ChangeLog
+### v0.1.4
+* Created landing page and About me page
+* Added SCSS
+* Added styling
+* Added condition for displaying hamburger menu on screens of less than 600px width
+* Updated an issue with the readme section where { component } would try to import the component unless {} was changed to HTML entities
+
+
+
 ### v0.1.3
 * Created blank landing page
 * Added routing for display pages
