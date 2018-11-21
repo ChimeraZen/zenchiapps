@@ -1,0 +1,134 @@
+#about-page {
+  width: 100%;
+  height: 100%;
+}
+
+#about-page p {
+    padding: 18px 18px 0 18px;
+}
+
+#about-page p:last-child {
+  padding-bottom: 18px;
+}
+  
+#about-page #credentials {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 12px;
+}
+
+#about-page #credentials > header {
+  width: 100%;
+  margin-bottom: 12px;
+}
+  
+#about-page .work-experience {
+  flex: 1 2 300px;
+
+  min-width: 250px;
+
+  margin: 12px;
+  padding: 12px;
+
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+}
+
+#about-page .work-experience header {
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid #2196f3;
+}
+
+#about-page .work-experience header h3 {
+  margin: 0;
+}
+      
+#about-page .work-experience header > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#about-page .work-experience header > div span {
+  min-width: 145px;
+}
+        
+#about-page .work-experience header > div span:last-child {
+  text-align: right;
+  max-width: 155px;
+}
+
+#about-page .work-experience:last-child {
+  margin-bottom: 12px;
+}
+  
+#about-page > header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about-page > header .creator-avatar {
+  flex: 1 1 20%;
+  min-width: 150px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#about-page > header .creator-header {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 330px;
+  max-height: 250px;
+}
+
+#about-page > header .creator-header h1 {
+  margin-left: 12px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+#about-page > header .creator-header span {
+  margin-bottom: 24px;
+  margin-left: 12px;
+  font-size: 1.2rem;
+}
+  
+#about-page > header .creator-header .quicklinks {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 100%;
+        height: 64px;
+        margin-top: auto;
+        border-top: 1px solid #2196f3;
+        border-bottom: 1px solid #2196f3;
+}
+
+#about-page > header .creator-header .quicklinks i {
+  font-size: 2rem;
+}
+
+#about-page > header .creator-description {
+  flex: 1 1 50%;
+  border-bottom: 1px solid #2196f3;
+}
+
+  
+#about-page > section {
+    padding: 24px;
+}
+
+#about-page > section h2 {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+    
+#about-page > section h3 {
+  margin-top: 12px;
+}

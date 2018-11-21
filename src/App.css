@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   color: inherit;
@@ -11,60 +11,201 @@ html {
   overflow: hidden;
 }
 
-body, #root {
+body, 
+#root, 
+#zenchiapps {
   width: 100%;
   height: 100%;
 }
 
-.zenchiapps {
-  width: 100%;
-  height: 100%;
+ul, ol {
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: none;
 }
 
 
 /* Nav */
-.zenchiapps > nav {
+#zenchiapps > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 64px;
+  max-height: 64px;
+
   color: #FFF;
   background: #111;
 }
 
-.zenchiapps > nav > ul {
+
+/* Nav User Icon */
+#zenchiapps > nav .avatar {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  min-width: 100%;
-  max-width: 100%;
-  
-  min-height: 64px;
-  max-height: 64px;
-  
-  font-weight: 600;
-  
-  list-style-type: none;
+
+  width: 36px;
+  height: 36px;
+
+  margin-right: 7px;
+
+  font-size: 1rem;
+
+  overflow: hidden;
+}
+    
+/* Dropdown Lists */
+#zenchiapps > nav .drop-down-list {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 64px;
+  cursor: pointer;
 }
 
-.zenchiapps > nav > ul li {
+#zenchiapps > nav .drop-down-list .list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 64px;
+  height: 64px;
+}
+
+#zenchiapps > nav .drop-down-list .list-icon.right i:first-child {
+  font-size: initial;
+}
+
+#zenchiapps > nav .drop-down-list .list-icon.right i:last-child {
+  width: 40px;
+  margin-right: 7px;
+  font-size: 2rem;
+}
+
+
+#zenchiapps > nav .drop-down-list .list-icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+#zenchiapps > nav .drop-down-list .list-icon:hover {
+  background: rgba(255, 255, 255, 0.125);
+}
+
+#zenchiapps > nav .drop-down-list .list-icon i:first-child {
+  width: 40px;
+  margin-right: 7px;
+  font-size: 2rem;
+}
+
+  /* Dropdown UL */
+#zenchiapps > nav .drop-down-list ul {
+  position: absolute;
+  top: 64px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: max-content;
+  height: max-content;
+
+  background: #333;
+  transition: all .3s ease-in-out;
+
+  overflow: hidden;
+  z-index: 10;
+}
+
+#zenchiapps > nav .drop-down-list ul li:hover {
+  background: rgba(255, 255, 255, 0.125);
+}
+
+#zenchiapps > nav .drop-down-list ul li a {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 15px;
+}
+
+#zenchiapps > nav .drop-down-list ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 10px;
+
+  font-size: 1.5rem;
+}
+
+  /* List States */
+#zenchiapps > nav .drop-down-list[data-list-state="open"] ul {
+  max-height: auto;
+}
+
+#zenchiapps > nav .drop-down-list[data-list-state="closed"] ul {
+  max-height: 0px;
+}
+
+ #zenchiapps > nav .drop-down-list:first-child ul {
+  left: 0;
+}
+   
+#zenchiapps > nav .drop-down-list:last-child  ul {
+  right: 0;
+}
+
+
+    
+    /* Direct NAV UL descendant */
+#zenchiapps > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#zenchiapps > nav > ul li {
+  min-width: fit-content;
+
   margin: 0 15px;
   padding: 3px 5px;
-  
+
   border-bottom: 3px solid transparent;
-  
+
   transition: border .3s ease-out;
 }
 
-.zenchiapps > nav > ul li:hover {
-  border-bottom: 3px solid #2196f3;
+#zenchiapps > nav > ul li:hover {
+  border-bottom: 3px solid #2a5475;
   transition: border .05s ease-out;
 }
 
-.zenchiapps > nav > ul li.active {
-  border-bottom: 3px solid #2a5475;
+#zenchiapps > nav > ul li.active {
+  border-bottom: 3px solid #2196f3;
   transition: border .3s ease-out;
 }
-
-/* Main */
-.zenchiapps > main {
+  
+#zenchiapps > main {
   height: calc(100% - 64px);
   overflow: auto;
+}
+#zenchiapps > main a {
+  color: #2196f3;
+  cursor: pointer;
+}
+#zenchiapps > main a:hover {
+  text-decoration: underline;
 }

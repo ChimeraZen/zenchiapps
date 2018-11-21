@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom'
 
 import avatar from '../../assets/images/eliedtke.jpeg'
 
-import './styles.scss'
+import './styles.css'
 
 class AboutPage extends Component {
   componentDidMount() {

@@ -6,7 +6,7 @@ import Routes from './components/Routes'
 
 import appContext from './components/contexts'
 
-import './App.scss'
+import './App.css'
 
 export default class App extends Component {
   static contextType = appContext

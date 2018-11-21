@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './styles.scss'
+import './styles.css'
 
 export default class Homepage extends Component {
   // Use the data-id attribute to scroll target into view
