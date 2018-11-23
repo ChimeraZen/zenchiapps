@@ -1,6 +1,7 @@
 {
   "name": "zenchiapps",
   "version": "0.1.6",
+  "license": "(ISC OR GPL-3.0)",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
