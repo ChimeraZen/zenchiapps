@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 
 import { GitHubReadme } from '../../lib'
 
 import './styles.css'
 
-export default class GitHubReadmePage extends Component {
+class GitHubReadmePage extends Component {
   componentDidMount() {
     const readMe = 'https://raw.githubusercontent.com/ChimeraZen/zenchi-github-readme/master/README.md'
     
@@ -33,3 +34,5 @@ export default class GitHubReadmePage extends Component {
       : <div>Loading Component...</div>
   }
 }
+
+export default withRouter(GitHubReadmePage)

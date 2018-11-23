@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 
 import { VideoPlayer } from '../../lib'
 
 import './styles.css'
 
-export default class VideoPlayerPage extends Component {
+class VideoPlayerPage extends Component {
   // Use the data-id attribute to scroll target into view
   scrollToId = (e) => {
     const target = e.currentTarget.dataset.id,
@@ -285,3 +286,5 @@ export default class VideoPlayerPage extends Component {
     )
   }
 }
+
+export default withRouter(VideoPlayerPage)
