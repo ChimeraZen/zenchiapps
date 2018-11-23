@@ -30,18 +30,13 @@ class AboutPage extends Component {
       const hash = this.props.location.hash.substring(1)
       this.scrollToHash(hash)
     } else if(this.props.location.hash.indexOf('#') === -1) {
-      const el = document.getElementById('about-page')
-
-      // Scroll the element into view
-      el.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
+      this.scrollToHash('about-page')
     }
   }
   
   scrollToHash = (hash) => {
     const el = document.getElementById(hash)
+    console.log('x', el)
 
     // Scroll the element into view
     el.scrollIntoView({
@@ -64,7 +59,7 @@ class AboutPage extends Component {
               <li><a href='https://www.linkedin.com/in/elijah-liedtke/'><i className="fab fa-linkedin" title="LinkedIn"></i></a></li>
               <li><a href="https://github.com/ChimeraZen/" rel="nofollow"><i className="fab fa-github"></i></a></li>
               <li><a href="https://jsfiddle.net/user/ChimeraZen/fiddles/" rel="nofollow"><i className="fab fa-jsfiddle"></i></a></li>
-              <li><a href="https://www.npmjs.com/settings/chimera.zen/packages"><i className="fab fa-npm" rel="nofollow"></i></a></li>
+              <li><a href="https://www.npmjs.com/~chimera.zen"><i className="fab fa-npm" rel="nofollow"></i></a></li>
             </ul>
           </div>
 
@@ -127,6 +122,7 @@ class AboutPage extends Component {
             </p>
           </section>
         </section>
+        
         <section>
           <header>
             <h2>
@@ -134,9 +130,9 @@ class AboutPage extends Component {
             </h2>
           </header>
           
-          <section>
+          <section id="extras">
             <header>
-              <h3 id="extras">Why are we here?</h3>
+              <h3>Why are we here?</h3>
             </header>
             <p>
               This isn't a philosophical question. I mean, why are we here on this page? Well, I assume it's to get to know more about me, and what it is that I do, of course!

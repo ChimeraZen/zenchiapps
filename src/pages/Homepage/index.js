@@ -41,7 +41,7 @@ export default class Homepage extends Component {
             </h2>
           </header>
           <p>
-            The following collection of React-based apps has been created to assist with the creation of new and exciting re-useable components. If you wish to use them in your own apps, all of the ZenChi apps are available on <a href="https://www.npmjs.com/settings/chimera.zen/packages" title="Packages available on www.npmjs.com">NPM</a> as standalone packages or part of the <a href="https://www.npmjs.com/package/zenchiapps" title="ZenChi Apps Package on www.npmjs.com">ZenChiApps</a> package.
+            The following collection of React-based apps has been created to assist with the creation of new and exciting re-useable components. If you wish to use them in your own apps, all of the ZenChi apps are available on <a href="https://www.npmjs.com/~chimera.zen" title="Packages available on www.npmjs.com">NPM</a> as standalone packages or part of the <a href="https://www.npmjs.com/package/zenchiapps" title="ZenChi Apps Package on www.npmjs.com">ZenChiApps</a> package.
           </p>
           <p>
             Questions, comments, suggestions and concerns are welcome and can be sent to <a href="mailto:chimera.zen@gmail.com">chimera.zen@gmail.com</a>
@@ -96,7 +96,7 @@ export default class Homepage extends Component {
               <ol>
                 <li>
                   Navigate to your app directory and enter:
-                  <pre>npm uninstall zenchi-videoplayer</pre>
+                  <pre>npm uninstall zenchiapps</pre>
                 </li>
               </ol>
             </section>

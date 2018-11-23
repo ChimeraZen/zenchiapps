@@ -5,17 +5,17 @@
   text-decoration: none;
 }
 
-html {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
+html,
 body, 
 #root, 
 #zenchiapps {
   width: 100%;
   height: 100%;
+}
+
+#zenchiapps {
+  position: relative;
+  overflow: hidden;
 }
 
 ul, ol {
@@ -38,6 +38,7 @@ ul {
 
   color: #FFF;
   background: #111;
+  z-index: 5;
 }
 
 
@@ -49,8 +50,6 @@ ul {
 
   width: 36px;
   height: 36px;
-
-  margin-right: 7px;
 
   font-size: 1rem;
 
@@ -66,7 +65,6 @@ ul {
   justify-content: center;
   align-items: center;
 
-  width: 64px;
   cursor: pointer;
 }
 
@@ -75,17 +73,17 @@ ul {
   justify-content: center;
   align-items: center;
 
-  width: 64px;
+  width: 72px;
   height: 64px;
 }
 
 #zenchiapps > nav .drop-down-list .list-icon.right i:first-child {
+  width: auto;
+  margin-right: 5px;
   font-size: initial;
 }
 
 #zenchiapps > nav .drop-down-list .list-icon.right i:last-child {
-  width: 40px;
-  margin-right: 7px;
   font-size: 2rem;
 }
 
@@ -104,7 +102,6 @@ ul {
 
 #zenchiapps > nav .drop-down-list .list-icon i:first-child {
   width: 40px;
-  margin-right: 7px;
   font-size: 2rem;
 }
 
@@ -199,6 +196,7 @@ ul {
 }
   
 #zenchiapps > main {
+  min-height: calc(100% - 64px);
   height: calc(100% - 64px);
   overflow: auto;
 }

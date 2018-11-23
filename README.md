@@ -3,7 +3,7 @@
 **Description**:  ZenChi Apps is a growing collection of reuseable React components that have been
                   built with user-accessibilty in mind to provide the best experience across all platforms
 
-**Version**:      [0.1.5](#v015)  
+**Version**:      [0.1.6](#v016)  
 **Author**:       Elijah Liedtke (Chimera.Zen)  
 **Email**:        [chimera.zen@gmail.com](mailto:chimera.zen@gmail.com)  
 **Link**:         https://github.com/ChimeraZen/zenchiapps
@@ -115,6 +115,16 @@ barColor       |string   |#2196F3 |RGB\/A \| HEX \| COLOR  |Bar color
 
 &nbsp;
 ## ChangeLog
+### v0.1.6
+* Added event listener for when to show mobile menu
+* Updated VideoPlayer to version 0.1.3
+* Added function to scroll to id based on location hash
+* Added delay to AboutPage
+* Corrected link to NPM
+
+
+
+
 ### v0.1.5
 * Reverted SCSS back to CSS due to issues with Netlify.com and the node-sass package
 

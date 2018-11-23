@@ -30,7 +30,7 @@ class Nav extends Component {
   }
 
   setMobileView = () => {
-    if(window.outerWidth < 600 || (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) && window.outerWidth < 600)) {
+    if(window.innerWidth < 600) {
       this.setState({
         showMobile: true
        })
@@ -138,7 +138,7 @@ class Nav extends Component {
             <li><a href="https://www.linkedin.com/in/elijah-liedtke/" rel="nofollow"><i className="fab fa-linkedin"></i>LinkedIn</a></li>
             <li><a href="https://github.com/ChimeraZen/" rel="nofollow"><i className="fab fa-github"></i>GitHub</a></li>
             <li><a href="https://jsfiddle.net/user/ChimeraZen/fiddles/" rel="nofollow"><i className="fab fa-jsfiddle"></i>JSFiddle</a></li>
-            <li><a href="https://www.npmjs.com/settings/chimera.zen/packages"><i className="fab fa-npm" rel="nofollow"></i>NPM</a></li>
+            <li><a href="https://www.npmjs.com/~chimera.zen"><i className="fab fa-npm" rel="nofollow"></i>NPM</a></li>
           </ul>
         </div>
       </nav>
