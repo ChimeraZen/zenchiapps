@@ -3,22 +3,20 @@
 **Description**:  ZenChi Apps is a growing collection of reuseable React components that have been
                   built with user-accessibilty in mind to provide the best experience across all platforms
 
-**Version**:      [0.1.6](#v016)  
+**Version**:      [0.1.7](#v017)  
 **Author**:       Elijah Liedtke (Chimera.Zen)  
 **Email**:        [chimera.zen@gmail.com](mailto:chimera.zen@gmail.com)  
 **Link**:         https://github.com/ChimeraZen/zenchiapps
 
 **Copyright**:    Copyright (c) 2018, Elijah Liedtke  
-**License**:      http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+**License**:      http://www.gnu.org/licenses/gpl-3.0.html
 
 ## Table of Contents
 1. [Instructions](#instructions)
     1. [Installation](#installation)
     2. [Updating](#updating)
     3. [Uninstall](#uninstall)
-2. [Components](#components)
-    1. [Progress](#progress)
-3. [ChangeLog](#changelog)
+2. [ChangeLog](#changelog)
 
 ---
 
@@ -37,7 +35,7 @@ npm i zenchiapps
 ```
 import component_name from 'zenchiapps'
 
-Example: import Progress from 'zenchiapps'
+Example: import { VideoPlayer } from 'zenchiapps'
 ```
 &nbsp;
 ### Updating
@@ -53,68 +51,17 @@ npm uninstall zenchiapps
 ```
 
 &nbsp;
-## Components
-
-### Progress
-The ZenChi Progress component uses React v16.6 and the HTML5 canvas element to draw a radial or linear progress bar that uses the requestAnimationFrame API to ensure a consistent display across platforms.
-
-This component can be initialized using `import Progress from 'zenchiapps'`
-
-```
-<Progress 
-  title="Example" 
-  withBorder
-  max={100} 
-  percentage={80} 
-  speed={2} 
-  type='radial'
-  lineCap='round'
-/>
-```
-
-
-### Parameters
-
-Name        |Type     |Default|Syntax                                      |Description
-------------|---------|-------|--------------------------------------------|-------------------------------
-title       |string   |false  |string \| false                             |Default is false if no title prop is present
-type        |string   |radial |'radial \| bar'                             |Type
-max         |number   |100    |                                            |Default max is 100
-percentage  |number   |75     |                                            |Default percentage is 75
-speed       |number   |1.25   |                                            |Rate of progress increase between requested animation frames
-withBorder  |boolean  |false  |true \| false                               |**True** if included as component prop, otherwise default is **false**
-
-
-&nbsp;
-### Dimensions
-
-Name           |Type     |Default|Syntax          |Description
----------------|---------|-------|----------------|-------------------------------------
-width          |number   |150    |                |Canvas width default is 150px
-height         |number   |auto   |                |Canvas width default is **auto**
-
-
-&nbsp;
-### Styles
-
-Name                |Type     |Default|Syntax                             |Description
---------------------|---------|-------|-----------------------------------|----------------------------------------
-background          |string   |#FFF   |RGB\/A \| HEX \| COLOR             |Background color for canvas
-progressTextAlign   |string   |center |'center\|end\|left\|right\|start'  |Default alignment for progress text is **center**
-
-
-&nbsp;
-### Stroke
-
-Name           |Type     |Default |Syntax                  |Description
----------------|---------|--------|------------------------|----------------
-titleTextColor |string   |#000    |RGB\/A \| HEX \| COLOR  |Title text color 
-baselineColor  |string   |#DDD    |RGB\/A \| HEX \| COLOR  |Baseline color
-borderColor    |string   |#DDD    |RGB\/A \| HEX \| COLOR  |Border color
-barColor       |string   |#2196F3 |RGB\/A \| HEX \| COLOR  |Bar color
-
-&nbsp;
 ## ChangeLog
+### v0.1.7
+* Created OptionsList component
+* Created OptionsList demo page
+* Nav.js
+  * Moved main menu into const mainMenu
+  * Added navlink for OptionsList demo page
+
+
+
+
 ### v0.1.6
 * Added event listener for when to show mobile menu
 * Updated VideoPlayer to version 0.1.3

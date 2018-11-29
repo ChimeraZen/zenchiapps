@@ -1,0 +1,27 @@
+#options-page {
+}
+
+#options-page > .readme {
+  padding: 32px;
+  border-top: 2px solid rgba(0, 0, 0, 0.125);
+}
+
+#options-page > .options-list-demo {
+  max-width: 500px;
+  margin: 32px auto;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+}
+
+#options-page > .options-list-demo > header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+}
+
+#options-page > .options-list-demo > header > h1 {
+  margin: 0 12px;
+}
+
+#options-page > .options-list-demo > p {
+  padding: 12px;
+}

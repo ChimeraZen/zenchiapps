@@ -66,6 +66,21 @@ class Nav extends Component {
   }
   
   render() {
+    const mainMenu = <ul>
+            <li className={this.props.location.pathname === '/' ? 'active' : null}>
+              <NavLink to='/'>Home</NavLink>
+            </li>
+            <li className={this.props.location.pathname === '/options-list' ? 'active' : null}>
+              <NavLink to='/options-list'>OptionsList</NavLink>
+            </li>
+            <li className={this.props.location.pathname === '/videoplayer' ? 'active' : null}>
+              <NavLink to='/videoplayer'>Video Player</NavLink>
+            </li>
+            <li className={this.props.location.pathname === '/github-readme' ? 'active' : null}>
+              <NavLink to='/github-readme'>GitHub Readme</NavLink>
+            </li>
+          </ul>
+          
     return (
       <nav>
         <div className="drop-down-list" data-list-state={this.state.creator}>
@@ -94,39 +109,9 @@ class Nav extends Component {
                   <div className='list-icon' title='Links to Creator details' name="main" onClick={this.handleListState}>
                     <i className="fas fa-bars"></i>
                   </div>
-                  <ul>
-                    <li>
-                      <NavLink to='/'>Home</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to='/videoplayer'>Video Player</NavLink>
-                    </li>
-                    {/* 
-                    <li>
-                      <NavLink to='/progress'>Progress</NavLink>
-                    </li>
-                    */}
-                    <li>
-                      <NavLink to='/github-readme'>GitHub Readme</NavLink>
-                    </li>
-                  </ul>
+                  {mainMenu}
                 </div>
-              : <ul>
-                  <li className={this.props.location.pathname === '/' ? 'active' : null}>
-                    <NavLink to='/'>Home</NavLink>
-                  </li>
-                  <li className={this.props.location.pathname === '/videoplayer' ? 'active' : null}>
-                    <NavLink to='/videoplayer'>Video Player</NavLink>
-                  </li>
-                    {/* 
-                  <li className={this.props.location.pathname === '/progress' ? 'active' : null}>
-                    <NavLink to='/progress'>Progress</NavLink>
-                  </li>
-                    */}
-                  <li className={this.props.location.pathname === '/github-readme' ? 'active' : null}>
-                    <NavLink to='/github-readme'>GitHub Readme</NavLink>
-                  </li>
-                </ul>
+              : mainMenu
           }
         
         <div className="drop-down-list" data-list-state={this.state.quicklinks}>
