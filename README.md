@@ -3,7 +3,7 @@
 **Description**:  ZenChi Apps is a growing collection of reuseable React components that have been
                   built with user-accessibilty in mind to provide the best experience across all platforms
 
-**Version**:      [0.1.7](#v017)  
+**Version**:      [0.1.8](#v018)  
 **Author**:       Elijah Liedtke (Chimera.Zen)  
 **Email**:        [chimera.zen@gmail.com](mailto:chimera.zen@gmail.com)  
 **Link**:         https://github.com/ChimeraZen/zenchiapps
@@ -52,6 +52,12 @@ npm uninstall zenchiapps
 
 &nbsp;
 ## ChangeLog
+### v0.1.8
+* Security fixes
+
+
+
+
 ### v0.1.7
 * Created OptionsList component
 * Created OptionsList demo page
